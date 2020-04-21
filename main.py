@@ -1,6 +1,5 @@
 '''ATM Simulator
-Written by Wyatt Smith 04/20/2020
-NOTICE: This program uses the termcolor library and will only run in Repl.it.'''
+Written by Wyatt Smith 04/20/2020'''
 
 balance = 1000
 
