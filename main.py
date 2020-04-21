@@ -2,7 +2,6 @@
 Written by Wyatt Smith 04/20/2020
 NOTICE: This program uses the termcolor library and will only run in Repl.it.'''
 
-from termcolor import cprint
 balance = 1000
 
 def withdrawl(amount):
@@ -24,9 +23,9 @@ def deposit(amount):
 
 def paybills(type,amount):
   global balance
-  cprint("[1] Electric","yellow")
-  cprint("[2] Water","blue")
-  cprint("[3] Gas","green")
+  print("[1] Electric")
+  print("[2] Water")
+  print("[3] Gas")
   type = int(input("Which bill to pay? "))
   while not (1 <= type <= 3):
     type = int(input("Invalid bill type. Please enter a valid type. "))
@@ -59,10 +58,10 @@ def paybills(type,amount):
 print("Welcome to ATM Simulator.\n\n")
 
 print("Your account balance is $" + str(balance))
-cprint("[1] Withdrawl","red")
-cprint("[2] Deposit","green")
-cprint("[3] Pay Bills","yellow")
-cprint("[4] Check Balance","blue")
+print("[1] Withdrawl")
+print("[2] Deposit")
+print("[3] Pay Bills")
+print("[4] Check Balance")
 print("[5] End")
 transaction = int(input("Which transaction? "))
 while not (1 <= transaction <= 5):
@@ -78,14 +77,14 @@ while transaction != 5:
   elif transaction == 4:
     print("Your account balance is $" + str(balance))
   print("Your account balance is $" + str(balance))
-  cprint("[1] Withdrawl","red")
-  cprint("[2] Deposit","green")
-  cprint("[3] Pay Bills","yellow")
-  cprint("[4] Check Balance","blue")
+  print("[1] Withdrawl")
+  print("[2] Deposit")
+  print("[3] Pay Bills")
+  print("[4] Check Balance")
   print("[5] End")
   transaction = int(input("Which transaction? "))
   while not (1 <= transaction <= 5):
     transaction = int(input("Invalid transaction. Which transaction? "))
 
 print("Thank you for using ATM Simulator!")
-cprint("Simulation ended.","red")
+print("Simulation ended.")
